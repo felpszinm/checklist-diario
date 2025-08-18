@@ -110,16 +110,3 @@ if __name__ == '__main__':
     gestor_frotas.unificar_dados()
     #gestor_frotas.salvar_planilha_base()
     print(gestor_frotas.df_colunas_filtradas)
-
-
-
-"""
-    TODO: Planilha-Base
-    -> Criar um método de válidação de linhas de ambas as planilhas dentro de 'Planilha-Base';
-    -> Se caso a falta de informações na parte de DDS/PROLOG/VEC FLEET, pegar as informações e colocar diretamente dentro de ambas
-    -> Ex: as informações do dia 14/08/2025 não estiver nela mas estiver nas outras, passe as informações do dia 14/08/2025 pra 'Planilha-Base'
-#*  -> Dica: Usar o Datetime(Data de Hoje / Now()) para data a data que estiver faltando.
-
-?   Avisos:
-    -> Utilização da lib. Pandas, os, datetime e POO.
- """   
