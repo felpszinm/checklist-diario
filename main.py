@@ -88,6 +88,23 @@ if __name__ == '__main__':
         }
     ]
 
+    #TODO: Planilhas de dispatchers, verificar com a kauanny como vai ser montado essa planilha.
+    """{
+        'caminho': 'planilhas-checklists-dispatchers/Planilha-VecFleetDispatcher.xlsx',
+        'aba': ['Frota Fixa', 'Meli', 'Base'],
+        'colunas': ['SIGLAS', 'PLACA', 'BASE', 'COORDENADOR', 'TEM NO MELI?', 'Coluna1'],
+        'aba_destino': ['FROTA FIXA', 'MELI', 'BASE']
+    }
+    {
+        'caminho': 'planilhas-checklists-dispatchers/Planilha-Quinzenal-VecFleet.xlsx', 
+        'aba': 'Worksheet',
+        'colunas': ['SIGLAS', 'PLACA', 'BASE', 'COORDENADOR', 'TEM NO MELI?', 'Coluna1'],
+        'aba_destino': ['FROTA FIXA', 'MELI', 'BASE']
+    }
+    """
+    #TODO: Validar as colunas e verificar se há como colocar na mesma planilha.
+
+
     gestor_frotas = LeitorDePlanilhas(planilhas_auxiliares)
     gestor_frotas.ler_planilha_base()
     gestor_frotas.unificar_dados()
