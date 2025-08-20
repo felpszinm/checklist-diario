@@ -7,14 +7,14 @@ from time import sleep
 if __name__ == '__main__':
 
     gestor_frotas = LeitorDePlanilhas(planilhas_auxiliares)
+    editor_frotas = EditorDePlanilha(caminho_planilha_base=BASE_PATH)
     gestor_frotas.ler_planilha_base()
     gestor_frotas.unificar_dados()
     gestor_frotas.salvar_planilha_base()
     print('\n\033[1;33mTodos os dados do pandas foi salvo na Planilha Base!\n')
     sleep(2)
     print('\033[mIncluindo as fórmulas no seu programa...')
-    sleep(2)
-    editor_frotas = EditorDePlanilha(caminho_planilha_base=BASE_PATH)
+    #TODO: Colocar os métodos do editor de planilha.
     print('\033[1;33mFórmulas salvas!')
     sleep(2)
-    print('\033[1;32mPrograma Concluído ✅')
+    print('\n\033[1;32mPrograma Concluído ✅')

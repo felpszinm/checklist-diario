@@ -87,5 +87,8 @@ class EditorDePlanilha:
         formula_ff_meli = f'=SE(ÉERROS(PROCV({index};Meli!G:G;1;FALSO));"NÃO";"SIM")'
         formula_ff_disponibilidade = f'=PROCV(@B:B;BASE!C:J;8;0)'
 
+
+# ? Aguardando Kauany verificar quais colunas ela vai atualizar...
 # TODO: PEGAR AS COLUNAS E, F e colocar na ordem formula meli e formula disponibilidade.
 # TODO: fazer até o ultimo valor da coluna B (placas).
+# TODO: Dentro de Frota Fixa, remover os traços das placas. (coluna)
